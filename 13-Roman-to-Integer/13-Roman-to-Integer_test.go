@@ -12,17 +12,19 @@ func Test_romanToInt(t *testing.T) {
 		args args
 		want int
 	}{
-		// TODO: Add test cases.
+		// Test Case 1
 		{
 			name: "example 1",
 			args: args{"III"},
 			want: 3,
 		},
+		// Test Case 2
 		{
 			name: "example 2",
 			args: args{"LVIII"},
 			want: 58,
 		},
+		// Test Case 3
 		{
 			name: "example 3",
 			args: args{"MCMXCIV"},
