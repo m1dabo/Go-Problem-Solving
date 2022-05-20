@@ -14,9 +14,19 @@ func Test_romanToInt(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{
-			name: "",
-			args: args{"sa"},
-			want: []int{},
+			name: "example 1",
+			args: args{"III"},
+			want: 3,
+		},
+		{
+			name: "example 2",
+			args: args{"LVIII"},
+			want: 58,
+		},
+		{
+			name: "example 3",
+			args: args{"MCMXCIV"},
+			want: 1994,
 		},
 	}
 	for _, tt := range tests {
