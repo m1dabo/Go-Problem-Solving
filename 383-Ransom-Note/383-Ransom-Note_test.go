@@ -12,7 +12,24 @@ func Test_canConstruct(t *testing.T) {
 		args args
 		want bool
 	}{
-		// TODO: Add test cases.
+		// Test Case 1
+		{
+			name: "example 1",
+			args: args{"a", "b"},
+			want: false,
+		},
+		// Test Case 2
+		{
+			name: "example 2",
+			args: args{"aa", "ab"},
+			want: false,
+		},
+		// Test Case 3
+		{
+			name: "example 3",
+			args: args{"aa", "aab"},
+			want: true,
+		},
 	}
 	for _, tt := range tests {
 		tt := tt
